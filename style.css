@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Certifique-se de que as dimensões incluam as bordas e o preenchimento */
+}
+
+body {
+    min-height: 100vh; /* Defina uma altura mínima para ocupar toda a altura da janela de visualização */
+    overflow-x: hidden; /* Esconda a barra de rolagem horizontal */
+}
+
+.navbar{
+    width: 100%;
+    height: 125px;
+    margin-top: -15px;
+    transition: all 0.5s;
+}
+
+.container-fluid {
+    padding-left: 12%; /* Altere margin para padding para evitar espaço extra no eixo x */
+    padding-right: 12%;
+}
+
+.nav-item {
+    margin: 0 1vw;
+}
+
+.navbar-scrolled1 {
+    background-color: white;
+}
+
+.navbar-scrolled1 .nav-link {
+    color: black;
+}
+
+.navbar-scrolled1 .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-scrolled1 .logo {
+    color: #007bff;
+}
+
+.navbar-scrolled2 {
+    height: 90px;
+}
+
+.content1 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("pictures/background.webp");
+}
+
+.animated-text {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 35vh;
+    color: white;
+    animation: fade-down 3s;
+}
+
+.btn1 {
+    position: relative;
+    top: 40vh;
+    padding: 10px 40px;
+    border-radius: 25px;
+    animation: fade-down 3s;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(60px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.about-us{
+    position: relative;
+    top: 80vh;
+
+}
+.titles{
+    margin: 5% 0;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: #007bff;
+}
+.division-2{
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+.green{
+    color:green;
+}
